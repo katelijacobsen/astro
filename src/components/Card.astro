@@ -1,0 +1,20 @@
+---
+const header = Astro.props.header;
+---
+
+<article class="card">
+    <h2>{header}</h2>
+    <p>en meget kort lorem ipsum bom bom bom</p>
+    <slot />
+</article>
+
+<style>
+    p{
+        color:royalblue;
+    }
+
+    .card{
+        background-color:pink;
+        border-radius: 10%;
+    }
+</style>
