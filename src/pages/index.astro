@@ -2,29 +2,11 @@
 import "../styles/styles.css"
 import Card from "../components/Card.astro";
 import Button from "../components/Button.astro";
-import Navigation from "../components/Navigation.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>ASTRO</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, non.</p>
-		<main class="card">
-		<Card header="Hej Verden">
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui tenetur eligendi minus nam at sit libero blanditiis excepturi voluptatem veniam.</p>
-			<img src="/favicon.svg" alt="meme">
-			<button>KLIK HER</button>
-		</Card>
-		</main>
-		<Button variant="primary" size="small">KLIK HER AH YEAH</Button>
-		<Button variant="secondary" size="medium">AH YEAH ANOTHER BUTTON</Button>
-		<Button variant="secondary" size="large">BUTTON BUTTON BUTTON</Button>
-	</body>
-</html>
+<MainLayout title="Hjem">
+	<Button variant="primary" size="small">KLIK HER AH YEAH</Button>
+	<Button variant="secondary" size="medium">AH YEAH ANOTHER BUTTON</Button>
+	<Button variant="secondary" size="large">BUTTON BUTTON BUTTON</Button>
+</MainLayout>

@@ -1,0 +1,9 @@
+---
+import "../styles/styles.css"
+import MainLayout from "../layouts/MainLayout.astro";
+const {title} = Astro.props;
+---
+<MainLayout title="Om os">
+    <h1>{title}</h1>
+    <p>Her er about us</p>
+</MainLayout>
